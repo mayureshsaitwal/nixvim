@@ -1,7 +1,7 @@
 {
   plugins.treesitter-textobjects = {
     enable = true;
-    select = {
+    settings.select = {
       enable = true;
       lookahead = true;
       keymaps = {
@@ -18,7 +18,7 @@
         "at" = "@comment.outer";
       };
     };
-    move = {
+    settings.move = {
       enable = true;
       gotoNextStart = {
         "]m" = "@function.outer";
@@ -37,13 +37,27 @@
         "[]" = "@class.outer";
       };
     };
-    swap = {
+    settings.swap = {
       enable = true;
       swapNext = {
         "<leader>a" = "@parameters.inner";
       };
       swapPrevious = {
         "<leader>A" = "@parameter.outer";
+      };
+    };
+    settings.lsp_interop = {
+      enable = true;
+      border = "single";
+      peekDefinitionCode = {
+        "<leader>df" = {
+          query = "@function.outer";
+          desc = "Peek definition outer function";
+        };
+        "<leader>dF" = {
+          query = "@class.outer";
+          desc = "Peek definition outer class";
+        };
       };
     };
   };

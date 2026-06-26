@@ -1,18 +1,21 @@
 {
   plugins = {
+    # lsp.config.enable = true;
     lsp-format = {
       enable = true;
     };
+    rustaceanvim.enable = true;
+
     lsp = {
       enable = true;
       servers = {
         html = {
           enable = true;
         };
-        lua-ls = {
+        lua_ls = {
           enable = true;
         };
-        nil-ls = {
+        nil_ls = {
           enable = true;
         };
         nixd = {
@@ -21,7 +24,7 @@
         marksman = {
           enable = true;
         };
-        pyright = {
+        basedpyright = {
           enable = true;
         };
         gopls = {
@@ -33,6 +36,9 @@
         yamlls = {
           enable = true;
         };
+        bashls.enable = true;
+        clangd.enable = true;
+        ruff.enable = true;
       };
       keymaps = {
         silent = true;

@@ -46,7 +46,11 @@
       updatetime = 250; # faster completion (4000ms default)
 
       # Set completeopt to have a better completion experience
-      completeopt = ["menuone" "noselect" "noinsert"]; # mostly just for cmp
+      completeopt = [
+        "menuone"
+        "noselect"
+        "noinsert"
+      ]; # mostly just for cmp
 
       # Enable persistent undo history
       swapfile = false;

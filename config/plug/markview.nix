@@ -1,5 +1,5 @@
 {
-  plugins.fidget = {
+  plugins.markview = {
     enable = true;
   };
 }

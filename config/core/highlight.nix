@@ -2,10 +2,12 @@
   config,
   lib,
   ...
-}: let
+}:
+let
   # colors = import ../config/colors/${config.theme}.nix {};
-  colors = import ../colors/paradise.nix {};
-in {
+  colors = import ../colors/paradise.nix { };
+in
+{
   config = lib.mkIf config.colorschemes.base16.enable {
     highlight = with colors; {
       # Mini tabline

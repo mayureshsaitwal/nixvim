@@ -41,81 +41,90 @@
     #   action = "+ui";
     # }
 
-    {
-      mode = "n";
-      key = "<leader>w";
-      action = "+windows";
-    }
+    # {
+    #   mode = "n";
+    #   key = "<leader>w";
+    #   action = "+windows";
+    # }
+    #
+    # {
+    #   mode = "n";
+    #   key = "<leader><Tab>";
+    #   action = "+tab";
+    # }
+    #
+    # {
+    #   mode = [
+    #     "n"
+    #     "v"
+    #   ];
+    #   key = "<leader>d";
+    #   action = "+debug";
+    # }
+    #
+    # {
+    #   mode = [
+    #     "n"
+    #     "v"
+    #   ];
+    #   key = "<leader>c";
+    #   action = "+code";
+    # }
+    #
+    # # Tabs
+    # {
+    #   mode = "n";
+    #   key = "<leader><tab><tab>";
+    #   action = "<cmd>tabnew<cr>";
+    #   options = {
+    #     silent = true;
+    #     desc = "New Tab";
+    #   };
+    # }
+    #
+    # {
+    #   mode = "n";
+    #   key = "<leader><tab>d";
+    #   action = "<cmd>tabclose<cr>";
+    #   options = {
+    #     silent = true;
+    #     desc = "Close tab";
+    #   };
+    # }
 
     {
       mode = "n";
-      key = "<leader><Tab>";
-      action = "+tab";
-    }
-
-    {
-      mode = [
-        "n"
-        "v"
-      ];
-      key = "<leader>d";
-      action = "+debug";
-    }
-
-    {
-      mode = [
-        "n"
-        "v"
-      ];
-      key = "<leader>c";
-      action = "+code";
-    }
-
-    # Tabs
-    {
-      mode = "n";
-      key = "<leader><tab><tab>";
-      action = "<cmd>tabnew<cr>";
-      options = {
-        silent = true;
-        desc = "New Tab";
-      };
-    }
-
-    {
-      mode = "n";
-      key = "<leader><tab>d";
+      key = "<C-w>";
       action = "<cmd>tabclose<cr>";
       options = {
         silent = true;
         desc = "Close tab";
       };
     }
-
     # Windows
-    {
-      mode = "n";
-      key = "<leader>ww";
-      action = "<C-W>p";
-      options = {
-        silent = true;
-        desc = "Other window";
-      };
-    }
+    # {
+    #   mode = "n";
+    #   key = "<leader>ww";
+    #   action = "<C-W>p";
+    #   options = {
+    #     silent = true;
+    #     desc = "Other window";
+    #   };
+    # }
+
+    # {
+    #   mode = "n";
+    #   key = "<leader>wd";
+    #   action = "<C-W>c";
+    #   options = {
+    #     silent = true;
+    #     desc = "Delete window";
+    #   };
+    # }
 
     {
       mode = "n";
-      key = "<leader>wd";
-      action = "<C-W>c";
-      options = {
-        silent = true;
-        desc = "Delete window";
-      };
-    }
-
-    {
-      mode = "n";
-      key = "<leader>w-";
+      key = "<leader>wj";
       action = "<C-W>s";
       options = {
         silent = true;
@@ -125,7 +134,7 @@
 
     {
       mode = "n";
-      key = "<leader>w|";
+      key = "<leader>wl";
       action = "<C-W>v";
       options = {
         silent = true;
@@ -184,15 +193,15 @@
     }
 
     # Quit/Session
-    {
-      mode = "n";
-      key = "<leader>qq";
-      action = "<cmd>quitall<cr><esc>";
-      options = {
-        silent = true;
-        desc = "Quit all";
-      };
-    }
+    # {
+    #   mode = "n";
+    #   key = "<leader>qq";
+    #   action = "<cmd>quitall<cr><esc>";
+    #   options = {
+    #     silent = true;
+    #     desc = "Quit all";
+    #   };
+    # }
 
     # JK combinations to save,quit and exit
     {
@@ -288,28 +297,30 @@
       mode = "n";
       key = "<A-J>";
       action = ":t .<cr>";
-      options = {desc = "Copy Current Line and Paste to next Line";};
-    }
-
-    {
-      mode = "n";
-      key = "<leader>ul";
-      action = ":lua ToggleLineNumber()<cr>";
       options = {
-        silent = true;
-        desc = "Toggle Line Numbers";
+        desc = "Copy Current Line and Paste to next Line";
       };
     }
 
-    {
-      mode = "n";
-      key = "<leader>uL";
-      action = ":lua ToggleRelativeLineNumber()<cr>";
-      options = {
-        silent = true;
-        desc = "Toggle Relative Line Numbers";
-      };
-    }
+    # {
+    #   mode = "n";
+    #   key = "<leader>ul";
+    #   action = ":lua ToggleLineNumber()<cr>";
+    #   options = {
+    #     silent = true;
+    #     desc = "Toggle Line Numbers";
+    #   };
+    # }
+    #
+    # {
+    #   mode = "n";
+    #   key = "<leader>uL";
+    #   action = ":lua ToggleRelativeLineNumber()<cr>";
+    #   options = {
+    #     silent = true;
+    #     desc = "Toggle Relative Line Numbers";
+    #   };
+    # }
 
     {
       mode = "n";
